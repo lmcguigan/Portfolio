@@ -1,0 +1,177 @@
+body {
+    position: relative;
+    background: linear-gradient(to bottom, #FCB3b3, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h2 {
+    font-family: Quicksand;
+    color: #67dfd3;
+    font-weight: 900;
+    text-shadow: 0px 1px 1px #555555;
+}
+
+h3 {
+    font-family: Quicksand;
+    color: #67dfd3;
+    text-shadow: 0px 1px 1px #555555;
+}
+
+p {
+    font-family: Quicksand;
+    color: #888888;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    color: #67dfd3!important;
+    font-weight: 900;
+    text-shadow: 0px 1px 1px #555555;
+    padding-left: 0.5rem;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.7);
+    border: 0px;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 20px;
+}
+
+#logo {
+    height: 4rem;
+}
+
+.sect {
+    margin-top: 14em;
+    margin-bottom: 14em;
+    display: flex;
+    justify-content: center;
+    min-height: 30rem;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, .90);
+    outline-style: solid;
+    outline-width: 40px;
+    outline-color: rgba(255, 255, 255, .50);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    height: fit-content;
+}
+
+input {
+    font-family: Quicksand;
+    float: none;
+    height: 1.5rem;
+}
+
+form {
+    padding-right: 1em;
+}
+
+textarea {
+    border: 1px solid rgb(235, 235, 235);
+}
+
+.img-responsive {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    outline: 1px solid #777777;
+}
+
+.img-over {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.container:hover .img-over {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.innerbanner {
+    background-color: #67dfd3;
+    color: white;
+    font-family: Quicksand;
+    text-shadow: 0px 1px 1px #555555;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10%;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.portfolioitem:hover .innerbanner {
+    opacity: 1;
+}
+
+.portfolioitem {
+    margin: 10px 0px 10px;
+    position: relative;
+}
+
+.portfolio {
+    margin-top: 30px;
+}
+
+.my-photo {
+    border-radius: 50%;
+    float: right;
+    margin-right: 1em;
+    width: 10rem;
+}
+
+#contact-section {
+    min-width: 100%;
+}
+
+#submit-btn {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to bottom, #FCB3b3, rgb(252, 154, 154));
+    color: white;
+    font-family: Quicksand;
+    text-shadow: 0px 1px 1px #555555;
+    border-radius: 8px;
+    border: 1px solid rgb(252, 154, 154);
+    padding: 10px;
+    height: fit-content;
+}
+
+.icon {
+    font-size: 30px;
+    color: #67dfd3;
+    text-shadow: 1px 1px 1px #777777;
+}
+
+.icon:hover {
+    opacity: 0.5;
+}
