@@ -175,3 +175,21 @@ textarea {
 .icon:hover {
     opacity: 0.5;
 }
+
+.icon-proj {
+    color: white;
+    font-size: 20px;
+}
+.icon-proj:hover {
+    color: rgb(252, 154, 154);
+}
+.project-thumb {
+    filter: sepia() hue-rotate(136deg) saturate(103.2%) brightness(91.2%);
+    -webkit-filter: sepia() hue-rotate(136deg) saturate(103.2%) brightness(91.2%);
+    transition: .5s ease;
+}
+
+.portfolioitem:hover .project-thumb {
+    filter: none;
+    -webkit-filter: none;
+}
