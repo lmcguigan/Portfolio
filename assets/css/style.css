@@ -25,7 +25,7 @@ p {
 
 .navbar-brand {
     font-size: 30px;
-    color: #67dfd3!important;
+    color: #99ddd4!important;
     font-weight: 900;
     text-shadow: 0px 1px 1px #555555;
     padding-left: 0.5rem;
@@ -44,8 +44,8 @@ p {
 }
 
 .sect {
-    margin-top: 14em;
-    margin-bottom: 14em;
+    margin-top: 14rem;
+    margin-bottom: 14rem;
     display: flex;
     justify-content: center;
     min-height: 30rem;
@@ -62,8 +62,8 @@ p {
     outline-style: solid;
     outline-width: 40px;
     outline-color: rgba(255, 255, 255, .50);
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     height: fit-content;
 }
 
@@ -113,7 +113,7 @@ textarea {
 }
 
 .innerbanner {
-    background-color: #67dfd3;
+    background-color: #99ddd4;
     color: white;
     font-family: Quicksand;
     text-shadow: 0px 1px 1px #555555;
@@ -145,10 +145,14 @@ textarea {
 .my-photo {
     border-radius: 50%;
     float: right;
-    margin-right: 1em;
     width: 10rem;
 }
-
+.holder{
+    border-radius: 50%;
+    float: right;
+    width: 10rem;
+    margin: 0 auto;
+}
 #contact-section {
     min-width: 100%;
 }
@@ -168,7 +172,7 @@ textarea {
 
 .icon {
     font-size: 30px;
-    color: #67dfd3;
+    color: #99ddd4;
     text-shadow: 1px 1px 1px #777777;
 }
 
@@ -180,9 +184,11 @@ textarea {
     color: white;
     font-size: 20px;
 }
+
 .icon-proj:hover {
     color: rgb(252, 154, 154);
 }
+
 .project-thumb {
     filter: sepia() hue-rotate(136deg) saturate(103.2%) brightness(91.2%);
     -webkit-filter: sepia() hue-rotate(136deg) saturate(103.2%) brightness(91.2%);
@@ -192,4 +198,40 @@ textarea {
 .portfolioitem:hover .project-thumb {
     filter: none;
     -webkit-filter: none;
+}
+
+@media only screen and (max-width: 400px) {
+    .sect {
+        margin-top: 10rem;
+    }
+    #logo {
+        height: 3.5rem;
+    }
+    .box {
+        outline-width: 30px;
+    }
+    .my-photo {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 12px;
+        text-align: justify;
+        text-justify: distribute;
+    }
+    h3 {
+        text-align: center;
+    }
+    input {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .my-photo{
+        float: none;
+    }
+    .holder{
+        float: none;
+    }
 }
