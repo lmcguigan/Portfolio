@@ -93,7 +93,6 @@ textarea {
     display: block;
     width: 100%;
     height: auto;
-    transition: .5s ease;
     backface-visibility: hidden;
 }
 
@@ -192,7 +191,6 @@ textarea {
 .project-thumb {
     filter: sepia() hue-rotate(136deg) saturate(103.2%) brightness(91.2%);
     -webkit-filter: sepia() hue-rotate(136deg) saturate(103.2%) brightness(91.2%);
-    transition: .5s ease;
 }
 
 .portfolioitem:hover .project-thumb {
