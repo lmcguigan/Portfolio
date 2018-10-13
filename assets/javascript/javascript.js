@@ -3,6 +3,14 @@ $(document).ready(function () {
     $('body').scrollspy({ target: ".navbar", offset: 230 });
     var projects = [
         {
+            title: "ArtNews Scraper",
+            description: "An application that scrapes the ArtNews website for articles and allows users to save articles and notes.",
+            uses: "Mongoose, MongoDB, Request, Cheerio, Express.js, Handlebars",
+            github: "https://github.com/lmcguigan/mongo-scraper",
+            live: "https://secure-river-70647.herokuapp.com/",
+            thumb: "assets/images/scraper.png"
+        },
+        {
             title: "SitterFinder",
             description: "An application that allows users to search available pet sitters in their area by location and service offered, and provides an interface for viewing and deleting upcoming reservations.",
             uses: "Sequelize, MySQL, Express.js, Handlebars",
