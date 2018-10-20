@@ -3,6 +3,14 @@ $(document).ready(function () {
     $('body').scrollspy({ target: ".navbar", offset: 230 });
     var projects = [
         {
+            title: "ClickyFruit!",
+            description: "A React application game that reshuffles cards and tracks cards the users has clicked on, adding points each time a user clicks a card that hasn't been clicked before.",
+            uses: "React.js, Bootstrap",
+            github: "https://github.com/lmcguigan/clicky-game",
+            live: "https://lmcguigan.github.io/clicky-game/",
+            thumb: "assets/images/clicky.png"
+        },
+        {
             title: "ArtNews Scraper",
             description: "An application that scrapes the ArtNews website for articles and allows users to save articles and notes.",
             uses: "Mongoose, MongoDB, Request, Cheerio, Express.js, Handlebars",
@@ -101,7 +109,6 @@ $(document).ready(function () {
     ]
 
     projects.forEach(function (item) {
-        console.log(item.title);
         var projectDiv = $("<div>");
         projectDiv.attr("class", "row project-div");
         projectDiv.attr("data-aos", "fade-in");
