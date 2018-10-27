@@ -1,3 +1,7 @@
+body {
+    font-family: Quicksand;
+}
+
 .backsplash {
     background-image: url(../images/bg-01.png);
     min-height: 100%;
@@ -7,9 +11,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.viewheight{
+
+.viewheight {
     height: 100vh;
 }
+
 .textsplash {
     margin-top: 40vh;
     margin-bottom: 20vh;
@@ -24,7 +30,6 @@ h2 {
     font-family: Quicksand;
     color: #99ddd4;
     font-weight: 900;
-    text-shadow: 0px 1px 1px #555555;
 }
 
 .hi {
@@ -34,19 +39,21 @@ h2 {
 h3 {
     font-family: Quicksand;
     color: #99ddd4;
-    text-shadow: 0px 1px 1px #555555;
 }
 
-.active > .nav-link {
-    
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #3d6963;
 }
-.nav-link{
+
+.nav-link {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
-a.nav-link{
+
+a.nav-link {
     padding-bottom: 0;
 }
+
 .text-col {
     text-align: left;
 }
@@ -69,6 +76,8 @@ a.nav-link{
 }
 
 .fa-arrow-down {
+    color: #99ddd4;
+    font-size: 30px;
     top: 10px;
     margin: 0;
     padding: 0;
@@ -110,10 +119,10 @@ hr {
     margin: 0
 }
 
-.small-hr{
+.small-hr {
     margin: 1rem;
     margin-top: 0;
-    width: 50%;
+    width: 110px;
     border-top: 1px solid rgba(252, 154, 154, 0.5);
 }
 
@@ -137,7 +146,6 @@ hr {
     font-size: 30px;
     color: #99ddd4!important;
     font-weight: 900;
-    text-shadow: 0px 1px 1px #555555;
     padding-left: 0.5rem;
 }
 
@@ -168,9 +176,11 @@ a:hover {
     justify-content: center;
     min-height: 30rem;
 }
-.section{
+
+.section {
     padding-top: 0rem;
 }
+
 #main {
     display: flex;
     justify-content: center;
@@ -228,27 +238,6 @@ textarea {
     padding: 16px 32px;
 }
 
-.innerbanner {
-    background-color: #99ddd4;
-    color: white;
-    font-family: Quicksand;
-    text-shadow: 0px 1px 1px #555555;
-    text-align: center;
-    font-size: 22px;
-    padding: 20px;
-    margin-bottom: 10px;
-    width: fit-content;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 10%;
-    transition: .5s ease;
-    opacity: 0;
-}
-
-.portfolioitem:hover .innerbanner {
-    opacity: 1;
-}
-
 .portfolioitem {
     margin: 10px 0px 10px;
     position: relative;
@@ -295,7 +284,6 @@ textarea {
 .icon {
     font-size: 30px;
     color: #99ddd4;
-    text-shadow: 1px 1px 1px #777777;
 }
 
 .icon-holder {
@@ -334,12 +322,35 @@ textarea {
     margin-right: 1rem;
 }
 
+.project-link {
+    color: #b48cda;
+}
+
+.project-link:hover {
+    color: #8058a0;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+#titleRow {
+    align-items: baseline;
+}
+
+.grey {
+    color: #888888;
+}
+
 @media only screen and (max-width: 400px) {
     .backsplash {
         background-image: url(../images/bg_long-01.png);
     }
     .sect {
-        margin-top: 10rem;
+        margin-top: 0;
+    }
+    .reverse-sm {
+        flex-direction: column-reverse;
     }
     #logo {
         height: 3.5rem;
@@ -348,13 +359,18 @@ textarea {
         outline-width: 30px;
     }
     .my-photo {
+        width: 75%;
         margin-left: 0px;
         margin-bottom: 10px;
     }
+    .my-photo-holder {
+        text-align: center;
+    }
+    .nav-icon-holder {
+        margin-bottom: 2rem;
+    }
     p {
         font-size: 12px;
-        text-align: justify;
-        text-justify: distribute;
     }
     h3 {
         text-align: center;

@@ -1,7 +1,14 @@
 
 $(document).ready(function () {
-    $('body').scrollspy({ target: ".navbar", offset: 230 });
     var projects = [
+        {
+            title: "New York Times Search",
+            description: "A React application game that searches the NYT API for articles, allows users to save/delete articles in the database and add/delete notes.",
+            uses: "React.js, MongoDB, Axios, Bootstrap",
+            github: "https://github.com/lmcguigan/nyt-search",
+            live: "https://blooming-atoll-67872.herokuapp.com/",
+            thumb: "assets/images/nyt.png"
+        },
         {
             title: "ClickyFruit!",
             description: "A React application game that reshuffles cards and tracks cards the users has clicked on, adding points each time a user clicks a card that hasn't been clicked before.",
@@ -127,9 +134,43 @@ $(document).ready(function () {
         projectImg.attr("class", "project-thumb img-fluid");
         var projectTextCol = $("<div>");
         projectTextCol.attr("class", "col-12 col-md-6 col-lg-8 text-col");
-        var itemTitle = $("<h3>");
-        itemTitle.attr("class", "title-text");
-        itemTitle.text(item.title);
+        var itemTitle = $("<div>");
+        itemTitle.attr("class", "row")
+        itemTitle.attr("id", "titleRow")
+        var titleCol = $("<div>");
+        titleCol.attr("class", "col-6");
+        var titleText = $("<h3>")
+        titleText.attr("class", "title-text");
+        titleText.text(item.title);
+        titleCol.append(titleText);
+        itemTitle.append(titleCol);
+        var links = $("<div>")
+        links.attr("class", "col-6 text-align-right");
+        if (item.live === "") {
+            var gitLink = $("<a>");
+            gitLink.attr("class", "project-link");
+            gitLink.attr("href", item.github);
+            gitLink.text("Github");
+            links.append(gitLink);
+            itemTitle.append(links);
+        }
+        else {
+            var liveLink = $("<a>");
+            liveLink.attr("href", item.live);
+            liveLink.attr("class", "project-link");
+            liveLink.text("Live");
+            links.append(liveLink);
+            var breaker = $("<span>");
+            breaker.addClass("grey");
+            breaker.text(" | ");
+            links.append(breaker);
+            var gitLink = $("<a>");
+            gitLink.attr("class", "project-link");
+            gitLink.attr("href", item.github);
+            gitLink.text("Github");
+            links.append(gitLink);
+            itemTitle.append(links);
+        }
         var itemDesc = $("<p>");
         itemDesc.attr("class", "desc-text");
         itemDesc.text(item.description);
@@ -144,9 +185,5 @@ $(document).ready(function () {
         projectDiv.append(projectTextCol);
         projectDiv.append(projectImgCol);
         $("#project-holder").append(projectDiv);
-    });
-    var typed = new Typed("#typed", {
-        // Waits 1000ms after typing "First"
-        strings: ["First ^1000 sentence.", "Second sentence."]
     });
 });

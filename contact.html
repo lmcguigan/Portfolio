@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" type="image/png" href="assets/images/lmfav-01.png">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/contactstyle.css" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
@@ -66,25 +67,25 @@
                 <div class="row justify-content-center">
                     <hr class="small-hr">
                 </div>
-                <form>
+                <form method ="POST" name="emailform" action = "email.php">
                     <div class="row">
                         <label class="form-label col-5 col-sm-4" for="name">
                             <p>Name</p>
                         </label>
 
-                        <input class="col-7 col-sm-8" id="name-input" type="text" placeholder="John Smith">
+                        <input class="col-7 col-sm-8" id="name-input" name="name" type="text">
                     </div>
                     <div class="row">
                         <label class="form-label col-5 col-sm-4" for="email">
                             <p>Email</p>
                         </label>
-                        <input class="col-7 col-sm-8" type="email" id="email-input" placeholder="example@gmail.com">
+                        <input class="col-7 col-sm-8" type="email" id="email-input" name="email">
                     </div>
                     <div class="row">
                         <label class="form-label col-5 col-sm-4" for="message-input">
                             <p>Message</p>
                         </label>
-                        <textarea class="col-7 col-sm-8" id="message-input"></textarea>
+                        <textarea class="col-7 col-sm-8" id="message-input" name="message"></textarea>
                     </div>
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">

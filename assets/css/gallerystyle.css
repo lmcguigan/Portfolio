@@ -1,0 +1,10 @@
+.gallerysplash{
+    margin-top: 20vh;
+    margin-bottom: 40vh;
+}
+@media only screen and (max-width: 992px) {
+    hr {
+        width: 180px!important;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,6 @@
+@media only screen and (max-width: 992px) {
+    hr {
+        width: 74px!important;
+        margin: 0 auto;
+    }
+}
