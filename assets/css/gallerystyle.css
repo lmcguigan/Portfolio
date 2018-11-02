@@ -8,3 +8,12 @@
         margin: 0 auto;
     }
 }
+.imgCol{
+    display: flex;
+    /* align-content: flex-end; */
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.text-align-left{
+    text-align: left;
+}

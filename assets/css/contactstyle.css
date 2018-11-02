@@ -4,3 +4,9 @@
         margin: 0 auto;
     }
 }
+.backsplash{
+    min-height: 100vh;
+}
+.green-link{
+    color: #57aca0;
+}

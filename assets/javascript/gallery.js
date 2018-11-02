@@ -60,6 +60,26 @@ $(document).ready(function () {
             collection: "ClickyFruit!",
             image: "assets/images/fruits/cutefruits-04.png"
         },
+        {
+            title: "Web Design Icon",
+            collection: "Portfolio",
+            image: "assets/images/icons-01.png"
+        },
+        {
+            title: "Resume Icon",
+            collection: "Portfolio",
+            image: "assets/images/icons-02.png"
+        },
+        {
+            title: "Email Icon",
+            collection: "Portfolio",
+            image: "assets/images/icons-03.png"
+        },
+        {
+            title: "Shape Background",
+            collection: "Portfolio",
+            image: "assets/images/bg_long-01.png"
+        },
     ];
 
     illustrations.forEach(function (item) {
