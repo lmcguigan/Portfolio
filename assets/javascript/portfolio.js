@@ -29,7 +29,7 @@ $(document).ready(function () {
             title: "SitterFinder (Collaborative Project)",
             description: "An application that allows users to search available pet sitters in their area by location and service offered, and provides an interface for viewing and deleting upcoming reservations. Role: Front-End Developer, Search Functionality Developer.",
             uses: "Sequelize, MySQL, Express.js, Handlebars",
-            github: "https://github.com/lmcguigan/project2",
+            github: "https://github.com/lmcguigan/sitter-finder",
             live: "https://stormy-lake-87916.herokuapp.com/",
             thumb: "assets/images/sitterfinder.png"
         },
