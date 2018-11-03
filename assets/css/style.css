@@ -1,5 +1,7 @@
 body {
     font-family: Quicksand;
+    margin: 0;
+    padding: 0;
 }
 
 .backsplash {
@@ -39,6 +41,10 @@ h2 {
 h3 {
     font-family: Quicksand;
     color: #99ddd4;
+}
+
+.navbar {
+    width: 100vw;
 }
 
 .navbar-light .navbar-nav .active>.nav-link {
@@ -342,7 +348,7 @@ textarea {
     color: #888888;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
     .backsplash {
         background-image: url(../images/bg_long-01.png);
         height: 100vh;
