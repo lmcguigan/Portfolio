@@ -351,8 +351,8 @@ textarea {
 
 @media only screen and (max-width: 414px) {
     .backsplash {
-        background-image: url(../images/bg_long-01.png);
-        height: 100vh;
+        background: url(../images/bg_long-01.png);
+        background-size: cover;
     }
     .sect {
         margin-top: 0;
