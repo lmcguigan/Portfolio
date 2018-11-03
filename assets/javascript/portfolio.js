@@ -2,14 +2,6 @@
 $(document).ready(function () {
     var projects = [
         {
-            title: "New York Times Search",
-            description: "A React application game that searches the NYT API for articles, allows users to save/delete articles in the database and add/delete notes.",
-            uses: "React.js, MongoDB, Axios, Bootstrap",
-            github: "https://github.com/lmcguigan/nyt-search",
-            live: "https://blooming-atoll-67872.herokuapp.com/",
-            thumb: "assets/images/nyt.png"
-        },
-        {
             title: "ClickyFruit!",
             description: "A React application game that reshuffles cards and tracks cards the users has clicked on, adding points each time a user clicks a card that hasn't been clicked before.",
             uses: "React.js, Bootstrap",
@@ -40,6 +32,14 @@ $(document).ready(function () {
             github: "https://github.com/lmcguigan/burger",
             live: "https://murmuring-bastion-39957.herokuapp.com/",
             thumb: "assets/images/burger.png"
+        },
+        {
+            title: "New York Times Search",
+            description: "A React application game that searches the NYT API for articles, allows users to save/delete articles in the database and add/delete notes.",
+            uses: "React.js, MongoDB, Axios, Bootstrap",
+            github: "https://github.com/lmcguigan/nyt-search",
+            live: "https://blooming-atoll-67872.herokuapp.com/",
+            thumb: "assets/images/nyt.png"
         },
         {
             title: "FriendFinder",
@@ -88,14 +88,6 @@ $(document).ready(function () {
             github: "https://github.com/lmcguigan/gif-getter",
             live: "https://lmcguigan.github.io/gif-getter/",
             thumb: "assets/images/oldhollywoodgifs.png"
-        },
-        {
-            title: "Trivia Game",
-            description: "A multiple choice trivia game where users are given a set time in which to select their answers.",
-            uses: "HTML, CSS, Bootstrap, jQuery, SetTimeouts",
-            github: "https://github.com/lmcguigan/TriviaGame",
-            live: "https://lmcguigan.github.io/TriviaGame/",
-            thumb: "assets/images/triviathumbnail.png"
         },
         {
             title: "Crystal Collector",
