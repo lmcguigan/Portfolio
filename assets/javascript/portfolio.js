@@ -110,8 +110,8 @@ $(document).ready(function () {
     projects.forEach(function (item) {
         var projectDiv = $("<div>");
         projectDiv.attr("class", "row project-div");
-        projectDiv.attr("data-aos", "fade-in");
-        projectDiv.attr("data-aos-duration", "2000");
+        //projectDiv.attr("data-aos", "fade-in");
+        //projectDiv.attr("data-aos-duration", "2000");
         var projectImgCol = $("<div>");
         projectImgCol.attr("class", "col-12 col-md-6 col-lg-4 imgcol");
         var imgLink = $("<a>");
