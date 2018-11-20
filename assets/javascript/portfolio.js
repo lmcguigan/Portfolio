@@ -2,6 +2,14 @@
 $(document).ready(function () {
     var projects = [
         {
+            title: "factor.it",
+            description: "A React application for students learning to factor quadratic trinomials that  provides feedback along the way.",
+            uses: "React.js, Express, MongoDB, Mongoose, Node, Reactstrap",
+            github: "https://github.com/lmcguigan/factor-app",
+            live: "https://aqueous-ocean-61869.herokuapp.com/",
+            thumb: "assets/images/factorit.png"
+        },
+        {
             title: "ClickyFruit!",
             description: "A React application game that reshuffles cards and tracks cards the users has clicked on, adding points each time a user clicks a card that hasn't been clicked before.",
             uses: "React.js, Bootstrap",
@@ -115,6 +123,7 @@ $(document).ready(function () {
         var projectImgCol = $("<div>");
         projectImgCol.attr("class", "col-12 col-md-6 col-lg-4 imgcol");
         var imgLink = $("<a>");
+        imgLink.attr("target", "_blank")
         if (item.live === "") {
             imgLink.attr("href", item.github);
         }
@@ -141,6 +150,7 @@ $(document).ready(function () {
         if (item.live === "") {
             var gitLink = $("<a>");
             gitLink.attr("class", "project-link");
+            gitLink.attr("target", "_blank")
             gitLink.attr("href", item.github);
             gitLink.text("Github");
             links.append(gitLink);
@@ -150,6 +160,7 @@ $(document).ready(function () {
             var liveLink = $("<a>");
             liveLink.attr("href", item.live);
             liveLink.attr("class", "project-link");
+            liveLink.attr("target", "_blank");
             liveLink.text("Live");
             links.append(liveLink);
             var breaker = $("<span>");
@@ -158,6 +169,7 @@ $(document).ready(function () {
             links.append(breaker);
             var gitLink = $("<a>");
             gitLink.attr("class", "project-link");
+            gitLink.attr("target", "_blank")
             gitLink.attr("href", item.github);
             gitLink.text("Github");
             links.append(gitLink);
