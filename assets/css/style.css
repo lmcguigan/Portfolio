@@ -135,6 +135,7 @@ hr {
 }
 
 .box {
+    box-shadow: 7px 7px 50px #666666;
     background-color: rgba(255, 255, 255, .90);
     padding: 1rem;
     text-align: center;

@@ -114,8 +114,62 @@ $(document).ready(function () {
             thumb: "assets/images/shapesthumbnail.png"
         }
     ]
-
+    projects.forEach(function (item){
+        var projectCard = $("<div>");
+        projectCard.attr("class", "card");
+        var projectImage = $("<img>");
+        projectImage.attr({
+            "class": "card-img-top",
+            "src": item.thumb,
+            "alt": item.title
+        })
+        projectCard.append(projectImage);
+        var projectTextDiv = $("<div>");
+        projectTextDiv.attr("class", "card-body");
+        var projectTitle = $("<h5>");
+        projectTitle.attr("class", "card-title title-text");
+        projectTitle.text(item.title);
+        projectTextDiv.append(projectTitle);
+        var projectDescription = $("<p>");
+        projectDescription.attr("class", "card-text");
+        projectDescription.text(item.description);
+        projectTextDiv.append(projectDescription)
+        var itemUses = $("<p>");
+        itemUses.attr("class", "uses-text");
+        itemUses.text("Uses: " + item.uses);
+        projectTextDiv.append(itemUses);
+        if (item.live === ""){
+            var gitLink = $("<a>");
+            gitLink.attr("class", "card-link project-link");
+            gitLink.attr("target", "_blank")
+            gitLink.attr("href", item.github);
+            gitLink.text("Github");
+            projectTextDiv.append(gitLink);
+        }
+        else {
+            var liveLink = $("<a>");
+            liveLink.attr("href", item.live);
+            liveLink.attr("class", "card-link project-link");
+            liveLink.attr("target", "_blank");
+            liveLink.text("Live");
+            projectTextDiv.append(liveLink);
+            var breaker = $("<span>");
+            breaker.addClass("grey");
+            breaker.text(" | ");
+            projectTextDiv.append(breaker);
+            var gitLink = $("<a>");
+            gitLink.attr("class", "card-link project-link");
+            gitLink.attr("target", "_blank")
+            gitLink.attr("href", item.github);
+            gitLink.text("Github");
+            projectTextDiv.append(gitLink);
+        }
+        projectCard.append(projectTextDiv)
+        $("#card-holder").append(projectCard)
+    })
     projects.forEach(function (item) {
+        var box = $("<div>");
+        box.attr("class", "box");
         var projectDiv = $("<div>");
         projectDiv.attr("class", "row project-div");
         //projectDiv.attr("data-aos", "fade-in");
@@ -188,6 +242,7 @@ $(document).ready(function () {
         projectImgCol.append(imgLink);
         projectDiv.append(projectTextCol);
         projectDiv.append(projectImgCol);
-        $("#project-holder").append(projectDiv);
+        box.append(projectDiv)
+        $("#project-holder").append(box);
     });
 });
