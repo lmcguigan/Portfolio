@@ -41,14 +41,14 @@ $(document).ready(function () {
             live: "https://murmuring-bastion-39957.herokuapp.com/",
             thumb: "assets/images/burger.png"
         },
-        {
-            title: "New York Times Search",
-            description: "A React application game that searches the NYT API for articles, allows users to save/delete articles in the database and add/delete notes.",
-            uses: "React.js, MongoDB, Axios, Bootstrap",
-            github: "https://github.com/lmcguigan/nyt-search",
-            live: "https://blooming-atoll-67872.herokuapp.com/",
-            thumb: "assets/images/nyt.png"
-        },
+        //{
+        //    title: "New York Times Search",
+        //    description: "A React application game that searches the NYT API for articles, allows users to save/delete articles in the database and add/delete notes.",
+        //    uses: "React.js, MongoDB, Axios, Bootstrap",
+        //    github: "https://github.com/lmcguigan/nyt-search",
+        //    live: "https://blooming-atoll-67872.herokuapp.com/",
+        //    thumb: "assets/images/nyt.png"
+        //},
         {
             title: "FriendFinder",
             description: "Matches users with their best friend match from a database of users based on responses to a survey.",
