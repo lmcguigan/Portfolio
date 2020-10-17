@@ -1,124 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>lucy.mcguigan</title>
-    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" type="image/png" href="assets/images/lmfav-01.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/aboutstyle.css" type="text/css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <link rel='stylesheet' href='assets/css/reset.css' type='text/css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link rel='shortcut icon' type='image/png' href='assets/images/lmfav-01.png'>
+    <link rel='stylesheet' href='assets/css/style.css' type='text/css'>
+    <link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css' />
+    <script src='https://code.jquery.com/jquery-3.3.1.js' integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60='
+        crossorigin='anonymous'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/typed.js@2.0.9'></script>
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">
-            <img src="assets/images/my-logo.png" id="logo">
+    <nav class='navbar fixed-top navbar-expand-md navbar-light'>
+        <a class='navbar-brand' id="brand-link">
+            <img src='assets/images/my-logo.png' id='logo'>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent'
+            aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+            <span class='navbar-toggler-icon'></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html#about">about</a>
-                    <hr data-aos="zoom-in">
+        <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+            <ul class='navbar-nav ml-auto'>
+                <li class='nav-item' id='about-link'>
+                    <a class='nav-link'>about</a>
                 </li>
-                <li class="nav-item dasher">
+                <li class='nav-item dasher'>
                     /
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">portfolio</a>
+                <li class='nav-item' id='portfolio-link'>
+                    <a class='nav-link'>portfolio</a>
                 </li>
-                <li class="nav-item dasher">
+                <li class='nav-item dasher'>
                     /
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">illustration gallery</a>
+                <li class='nav-item' id='speaking-link'>
+                    <a class='nav-link'>speaking</a>
                 </li>
-                <li class="nav-item dasher">
+                <li class='nav-item dasher'>
                     /
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">contact</a>
+                <li class='nav-item'  id='contact-link'>
+                    <a class='nav-link'>contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container-fluid backsplash viewheight">
-        <div class="row justify-content-center topmargin">
-            <div class="col-10 col-md-6 textsplash">
-                <div class="box message-box" data-aos="fade-in" data-aos-duration="3000">
-                    <h2>Let's make something<br><span id="typed"></span></h2>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <a href="index.html#about"><i class="fa fa-arrow-down"></i></a>
-        </div>
+    <div class='container-fluid backsplash viewheight'>
+        <div class='row justify-content-center' id='main-div'></div>
     </div>
-    <div class="sect" id="about">
-        <div class="row justify-content-center">
-            <div data-aos="fade-in" data-aos-duration="3000" class="col-10">
-                <div class="row reverse-sm">
-                    <div class="col-12 col-sm-8">
-                        <h2 class="hi">Hi, I'm Lucy!</h2>
-                        <p>I love to make things! Projects that afford the opportunity to leverage my
-                            skills in web development, design, and illustration are very exciting to me. Words,
-                            images, and interactive components multiply their magnitude when they work seemlessly
-                            in tandem.</p>
-                        <p>I bring a diverse background and perspective, informed by experience in development at a
-                            nonprofit community design center and various roles for museum exhibitions.
-                        </p>
-                        <p>I received a Master's of Arts in Art History from Southern Methodist University and a
-                            Bachelor of Arts in Sociology from the University of Pennsylvania.
-                        </p>
-                    </div>
-                    <div class="col-12 col-sm-4 my-photo-holder">
-                        <img data-aos="zoom-in-left" data-aos-duration="3000" class="my-photo" src="assets/images/me.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid sect section">
-        <div class="row nav-row justify-content-center" data-aos="fade-in" data-aos-duration="3000">
-            <div class="col-12 col-md-4 d-flex justify-content-center text-center nav-icon-holder">
-                <a href="projects.html">
-                    <img data-aos="fade-down" data-aos-duration="3000" class="flat-icon" src="assets/images/icons-01.png">
-                    <h3>portfolio</h3>
-                </a>
-            </div>
-            <div class="col-12 col-md-4 d-flex justify-content-center text-center nav-icon-holder">
-                <a href="https://www.linkedin.com/in/lucy-mcguigan/">
-                    <img data-aos="fade-down" data-aos-duration="3000" class="flat-icon" src="assets/images/icons-03.png">
-                    <h3>resume</h3>
-                </a>
-            </div>
-            <div class="col-12 col-md-4 d-flex justify-content-center text-center nav-icon-holder">
-                <a href="contact.html">
-                    <img data-aos="fade-down" data-aos-duration="3000" class="flat-icon" src="assets/images/icons-02.png">
-                    <h3>contact</h3>
-                </a>
-            </div>
-        </div>
-    </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src='https://unpkg.com/aos@next/dist/aos.js'></script>
     <script>
         AOS.init();
     </script>
-    <script src="assets/javascript/typescript.js"></script>
+    <script src='assets/javascript/nav-handler.js'></script>
 </body>
 
 </html>
